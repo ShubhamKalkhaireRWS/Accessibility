@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite  name="Suite">
+	<groups>
+		<run>
+			<include name="Perceivable"></include>
+		</run>
+	</groups>
+	<listeners>
+		<listener class-name="TestComponents.Listeners"></listener>
+	</listeners>
+	  <test thread-count="5" name="Perceivable" >
+    <classes>
+      <class name="Rws.Perceivable"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test thread-count="5" name="Operable">
+    <classes>
+      <class name="Rws.Operable"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
